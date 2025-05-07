@@ -424,6 +424,13 @@
                 display: none;
             }
         }
+
+        .qr-button:hover {
+    background-color: var(--accent) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+}
+
     </style>
 </head>
 <body>
@@ -549,6 +556,15 @@
           <img src="qr.png">
         </div>
         <p>Scansiona questo codice QR per salvare i miei contatti</p>
+        <div class="qr-action" style="margin-top: 1.5rem;">
+            <p style="margin-bottom: 0.8rem; color: var(--text-light);">Oppure clicca qui:</p>
+            <a href="https://linktr.ee/GamePool?utm_source=linktree_admin_share" class="qr-button" 
+               style="display: inline-block; background-color: var(--secondary); color: white; 
+                      padding: 0.8rem 1.8rem; border-radius: 30px; font-weight: 600;
+                      text-decoration: none; transition: var(--transition);">
+                Contattami
+            </a>
+        </div>
     </div>
     
     <footer>
