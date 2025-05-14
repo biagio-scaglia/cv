@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Biagio Scaglia - Web Developer e UI/UX Designer professionista. Specializzato in sviluppo web, design creativo e marketing digitale.">
+    <meta name="keywords" content="web developer, UI designer, UX designer, frontend developer, Biagio Scaglia, sviluppo siti web, SEO, marketing digitale, portfolio, HTML, CSS, JavaScript, Laravel, PHP">
+    <meta name="author" content="Biagio Scaglia">
+    <meta property="og:title" content="Biagio Scaglia - Web Developer & Designer">
+    <meta property="og:description" content="Portfolio professionale di Biagio Scaglia, Web Developer e UI/UX Designer con esperienza in sviluppo frontend, design e marketing digitale.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.biagioscaglia.com">
+    <meta property="og:image" content="https://www.biagioscaglia.com/images/preview.jpg">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.biagioscaglia.com">
+    
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
+    <title>Biagio Scaglia | Web Developer & UI/UX Designer | Portfolio Professionale</title>
+    
+    <script src="https://kit.fontawesome.com/ef5ccb6b44.js" crossorigin="anonymous"></script>
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"></noscript>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Biagio Scaglia",
+      "jobTitle": "Web Developer, UI/UX Designer",
+      "url": "https://www.biagioscaglia.com",
+      "sameAs": [
+        "https://linkedin.com/in/biagio-scaglia",
+        "https://github.com/biagio-scaglia"
+      ],
+      "email": "mailto:biagio.scaglia01@gmail.com",
+      "telephone": "+393513150134",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Modugno",
+        "addressRegion": "BA",
+        "addressCountry": "IT"
+      }
+    }
+    </script>
+    
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --accent: #e74c3c;
+            --text: #333333;
+            --text-light: #7f8c8d;
+            --shadow: 0 4px 6px rgba(0,0,0,0.1);
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.7;
+            color: var(--text);
+            background-color: #f9f9f9;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            color: var(--secondary);
+            font-weight: 400;
+            margin-bottom: 2rem;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 0.5rem;
+            margin: 2.5rem 0 1.8rem;
+            position: relative;
+        }
+        
+        h3::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent);
+            transition: var(--transition);
+        }
+        
+        h3:hover::after {
+            width: 100px;
+        }
+        
+        a {
+            color: var(--secondary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        a:hover {
+            color: var(--accent);
+            text-decoration: underline;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+            padding: 3rem 0;
+            background-color: white;
+            box-shadow: var(--shadow);
+            border-radius: 12px;
+            position: relative;
+            overflow: hidden;
+            animation: fadeIn 1s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: linear-gradient(90deg, var(--secondary), var(--accent));
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            margin-bottom: 4rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .left-column, .right-column {
+            background-color: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            animation: slideUp 0.8s ease-out;
+        }
+        
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .left-column:hover, .right-column:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+        }
+        
+        .profile-text {
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            text-align: justify;
+        }
+        
+        .experience-item, .education-item {
+            margin-bottom: 2.5rem;
+            position: relative;
+            padding-left: 2rem;
+        }
+        
+        .experience-item::before, .education-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.4rem;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--secondary);
+            transition: var(--transition);
+        }
+        
+        .experience-item:hover::before, .education-item:hover::before {
+            transform: scale(1.3);
+            background-color: var(--accent);
+        }
+        
+        .job-title, .degree {
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .company, .school {
+            font-style: italic;
+            color: var(--secondary);
+            margin-bottom: 0.7rem;
+            display: block;
+            font-size: 1.05rem;
+        }
+        
+        .date {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        ul {
+            padding-left: 1.5rem;
+            list-style-position: outside;
+        }
+        
+        li {
+            margin-bottom: 0.9rem;
+            position: relative;
+            line-height: 1.6;
+        }
+        
+        li::before {
+            content: '•';
+            color: var(--secondary);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+            left: 0;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .skill {
+            background-color: var(--light);
+            padding: 0.6rem 1.3rem;
+            border-radius: 25px;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+        }
+        
+        .skill i {
+            margin-right: 0.5rem;
+            font-size: 1rem;
+        }
+        
+        .skill:hover {
+            background-color: var(--secondary);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        }
+        
+        .contact-info {
+            margin-top: 2rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.3rem;
+            transition: var(--transition);
+            padding: 0.5rem;
+            border-radius: 5px;
+        }
+        
+        .contact-item:hover {
+            background-color: rgba(52, 152, 219, 0.1);
+            transform: translateX(5px);
+        }
+        
+        .contact-icon {
+            margin-right: 1.2rem;
+            color: var(--secondary);
+            width: 2rem;
+            text-align: center;
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+        
+        .contact-text {
+            flex-grow: 1;
+        }
+        
+        .qr-container {
+            text-align: center;
+            margin: 4rem auto;
+            padding: 2.5rem;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            max-width: 500px;
+            animation: fadeIn 1s ease-out;
+        }
+        
+        .qr-code {
+            width: 200px;
+            height: 200px;
+            margin: 1.5rem auto;
+            background-color: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+        
+        .qr-code:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .qr-code img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 2rem;
+            color: var(--text-light);
+            font-size: 0.95rem;
+            border-top: 1px solid #eee;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .social-link {
+            font-size: 1.5rem;
+            color: var(--secondary);
+            transition: var(--transition);
+        }
+        
+        .social-link:hover {
+            color: var(--accent);
+            transform: translateY(-3px);
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @media print {
+            body {
+                background-color: white;
+                font-size: 12pt;
+                line-height: 1.5;
+            }
+            
+            .container {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            header, .left-column, .right-column, .qr-container {
+                box-shadow: none;
+                page-break-inside: avoid;
+            }
+            
+            a {
+                text-decoration: none;
+                color: var(--text);
+            }
+            
+            .qr-container {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BIAGIO SCAGLIA</h1>
+        <h2>WEB DEVELOPER, UI/UX DESIGNER, CREATOR</h2>
+    </header>
+    
+    <div class="container">
+        <div class="left-column">
+            <section>
+                <h3>PROFILO</h3>
+                <p class="profile-text">Web Developer creativo e determinato, con un forte focus sull'usabilità e l'ottimizzazione del codice. Amo sperimentare soluzioni innovative, creando esperienze digitali funzionali e scalabili. Lavoro con passione, rispettando le scadenze e migliorandomi costantemente.</p>
+            </section>
+            
+            <section>
+              <h3>ESPERIENZA LAVORATIVA</h3>
+              <div class="experience-item">
+                  <div class="job-title">Consulente AI</div>
+                  <div class="company">Consorzio Artemide</div>
+                  <div class="date">giugno 2024 - dicembre 2024</div>
+                  <ul>
+                      <li>Analizzato e integrato soluzioni AI per ottimizzare processi aziendali e migliorare l'efficienza operativa</li>
+                      <li>Collaborato con team tecnici e creativi per sviluppare flussi automatizzati e assistenti virtuali</li>
+                      <li>Fornito supporto formativo e operativo su strumenti AI per il miglioramento continuo delle performance aziendali</li>
+                  </ul>
+              </div>
+              
+              <div class="experience-item">
+                  <div class="job-title">Web Developer</div>
+                  <div class="company">Freelance</div>
+                  <div class="date">2024 - Presente</div>
+                  <ul>
+                      <li>Sviluppato <strong>robertomagarelli.com</strong> e <strong>casadelemn.com</strong>, siti responsive ottimizzati per performance</li>
+                      <li>Gestito l'ottimizzazione SEO aumentando la visibilità organica del 60%</li>
+                      <li>Migliorato l'esperienza utente con tempi di caricamento ridotti del 40%</li>
+                  </ul>
+              </div>
+              
+              <div class="experience-item">
+                  <div class="job-title">Content Creator</div>
+                  <div class="company">italian_sonic_fanpage</div>
+                  <div class="date">2018 - presente</div>
+                  <ul>
+                      <li>Collaborato con <strong>Plaion</strong> e <strong>DeAgostini</strong> per creare contenuti esclusivi e aumentare la visibilità del brand</li>
+                      <li>Gestito italian_sonic_fanpage, creando contenuti coinvolgenti con +30k follower</li>
+                      <li>Aumentato l'engagement della community del 120% attraverso strategie di contenuto mirate</li>
+                  </ul>
+              </div>
+        </div>
+        
+        <div class="right-column">
+            <section>
+                <h3>ISTRUZIONE</h3>
+                <div class="education-item">
+                    <div class="degree">Master in UX/UI design</div>
+                    <div class="school">Talent Garden, Università degli studi di Bari, W-Academy</div>
+                    <div class="date">2023 - 2024 Valutazione: 30/30</div>
+                </div>
+                
+                <div class="education-item">
+                    <div class="degree">Diploma di scuola superiore</div>
+                    <div class="school">I.I.S.S TOMMASO FIORE</div>
+                    <div class="date">2018 - 2023 Valutazione: 85/100</div>
+                </div>
+            </section>
+            
+            <section>
+                <h3>CONTATTI</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <div class="contact-text">+39 351 315 0134</div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-text">biagio.scaglia01@gmail.com</div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-text">Modugno, BA</div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-globe"></i></div>
+                        <div class="contact-text"><a href="https://www.biagioscaglia.com" target="_blank">www.biagioscaglia.com</a></div>
+                    </div>
+                </div>
+            </section>
+            
+            <section>
+                <h3>HARD SKILLS</h3>
+                <div class="skills">
+                    <span class="skill"><i class="fab fa-html5"></i> HTML5</span>
+                    <span class="skill"><i class="fab fa-css3-alt"></i> CSS3</span>
+                    <span class="skill"><i class="fab fa-git-alt"></i> GIT</span>
+                    <span class="skill"><i class="fab fa-js"></i> JavaScript</span>
+                    <span class="skill"><i class="fas fa-code"></i> C</span>
+                    <span class="skill"><i class="fab fa-php"></i> PHP</span>
+                    <span class="skill"><i class="fas fa-database"></i> MySQL</span>
+                    <span class="skill"><i class="fab fa-laravel"></i> Laravel</span>
+                    <span class="skill"><i class="fab fa-node-js"></i> Node.js</span>
+                    <span class="skill"><i class="fas fa-cube"></i> CMS</span>
+                    <span class="skill"><i class="fab fa-figma"></i> Figma</span>
+                </div>
+            </section>
+            
+            <section>
+                <h3>SOFT SKILLS</h3>
+                <div class="skills">
+                    <span class="skill"><i class="fas fa-comments"></i> Comunicazione</span>
+                    <span class="skill"><i class="fas fa-users"></i> Teamwork</span>
+                    <span class="skill"><i class="fas fa-lightbulb"></i> Problem solving</span>
+                    <span class="skill"><i class="fas fa-random"></i> Adattabilità</span>
+                    <span class="skill"><i class="fas fa-clock"></i> Gestione tempo</span>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <div class="qr-container">
+        <h3>SCANSIONA PER CONTATTARMI</h3>
+        <div class="qr-code pulse">
+          <img src="qr.png">
+        </div>
+        <p>Scansiona questo codice QR per salvare i miei contatti</p>
+    </div>
+    
+    <footer>
+        &copy; 2025 Biagio Scaglia - Tutti i diritti riservati
+    </footer>
+</body>
+</html>
